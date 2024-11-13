@@ -389,7 +389,7 @@ public handleDamageSettings(id, menu, item)
 showHud(id, Float:holdTime)
 {
 	set_hudmessage(g_cvarHudColor[0], g_cvarHudColor[1], g_cvarHudColor[2], 
-		g_cvarHudPos[0], g_cvarHudPos[1], 
+		g_cvarHudPos[0], g_cvarHudPos[1], .fxtime=0.0,
 		.holdtime=holdTime, .fadeintime=0.0, .fadeouttime=0.1,
 		.channel=g_cvarHudChannel);
 
